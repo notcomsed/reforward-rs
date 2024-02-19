@@ -40,3 +40,6 @@ Same as reforward(C version) [https://github.com/notcomsed/reforward](https://gi
 >
 > The releases of this project are automatically compiled and released using github-actions. Please ensure that your running environment is not lower than the glibc environment of github-actions.
 > If the local glic environment is much lower than the github-actions environment, please download the manual `make` compilation locally.
+
+## Notice
+Neither reforward-rs nor reforward (C version) will resolve the domain name. Please input the IP address in [listen] and [connect].
