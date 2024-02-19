@@ -19,98 +19,10 @@ Same as reforward(C version) [https://github.com/notcomsed/reforward](https://gi
 
 ## iperf SpeedTest
 
-#### direct iperf
-```
-------------------------------------------------------------
- Client connecting to 127.0.0.1, TCP port 8888
- 
- TCP window size: 2.50 MByte (default)
- 
-------------------------------------------------------------
-
-[  3] local 127.0.0.1 port 51902 connected with 127.0.0.1 port 8888
-
-[ ID] Interval       Transfer     Bandwidth
-
-[  3] 0.0000-10.0020 sec  57.8 GBytes  49.6 Gbits/sec
-
-```
-
-----------
-
-#### rinetd
-
-```
-------------------------------------------------------------
-Client connecting to 127.0.0.1, TCP port 8088
-
-TCP window size: 4.00 MByte (default)
-
-------------------------------------------------------------
-
-[  3] local 127.0.0.1 port 56576 connected with 127.0.0.1 port 8088
-
-[ ID] Interval       Transfer     Bandwidth
-
-[  3] 0.0000-30.0031 sec  10.6 GBytes  3.02 Gbits/sec
-```
-
--------------------
-
-#### reforward (C version)
-
-```
-------------------------------------------------------------
-Client connecting to 127.0.0.1, TCP port 8080
-
-TCP window size: 2.50 MByte (default)
-
-------------------------------------------------------------
-
-[  3] local 127.0.0.1 port 48900 connected with 127.0.0.1 port 8080
-
-[ ID] Interval       Transfer     Bandwidth
-
-[  3] 0.0000-2.0001 sec  1.89 GBytes  8.14 Gbits/sec
-```
+![SpeedTest image](https://github.com/notcomsed/reforward-rs/assets/91320192/4ccb5131-b46b-456f-8098-609a576a770c)
 
 
---------------
-
-#### reforward-rs
-
-```
-------------------------------------------------------------
-Client connecting to 127.0.0.1, TCP port 8080
-
-TCP window size: 2.50 MByte (default)
-
-------------------------------------------------------------
-
-[  3] local 127.0.0.1 port 48900 connected with 127.0.0.1 port 8080
-
-[ ID] Interval       Transfer     Bandwidth
-
-[  3] 0.0000-10.0067 sec  23.7 GBytes  20.4 Gbits/sec
-
-
-
-
-------------------------------------------------------------
-Client connecting to 127.0.0.1, TCP port 8080
-
-TCP window size: 2.50 MByte (default)
-
-------------------------------------------------------------
-
-[  3] local 127.0.0.1 port 48900 connected with 127.0.0.1 port 8080
-
-[ ID] Interval       Transfer     Bandwidth
-
-[  3] 0.0000-10.0065 sec  24.2 GBytes  20.8 Gbits/sec
-```
-
-##### 可以看出来,reforward-rs与reforward (C version)的性能没差多少。差了一点，应该是误差。
+##### reforward-rs与reforward (C version)的性能差了一点，应该是误差。
 
 ## Warning
 > [!CAUTION]
